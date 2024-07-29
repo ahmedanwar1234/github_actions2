@@ -12,6 +12,15 @@ jobs:
             - run: |
                echo abc
                echo pdf
+   
+    docker-build:
+      runs-on: macos-11
+      needs: [build]
+      steps:
+         - uses: actions/checkout@v2 # use exactly script
+         - name: Build
+           run: |
+            docker build .
             
     
     
