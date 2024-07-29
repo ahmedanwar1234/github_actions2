@@ -6,7 +6,7 @@ name: Integration
 
 jobs:
     build:
-         runs-on: upuntu-latest #runs on require 
+         runs-on: ubuntu-latest #runs on require 
          steps: # steps require
             - uses: actions/checkout@v2 # use exactly script
             - run: |
